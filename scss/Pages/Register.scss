@@ -18,6 +18,14 @@
                     padding-bottom: 50px;
                 }
             }
+
+            form{
+                .col{
+                    .input-gender{
+                        border-bottom: none;
+                    }
+                }
+            }
         }
     }
 }

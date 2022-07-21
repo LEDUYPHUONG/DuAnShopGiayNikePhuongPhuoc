@@ -38,6 +38,7 @@ a{
 
 
 header{
+    background-color: $bg-color-3rd;
     .container{
         .header-inner{
             padding: 9px 15px;
@@ -51,6 +52,12 @@ header{
                     text-shadow: $text-shadow-primary;
                     padding-right: 30px;
                     @include text ($fw-sm,$fs-sm,$lh-sm);
+                    .link-register {
+                        color: $text-color-2nd;
+                        text-shadow: $text-shadow-primary;
+                        padding-right: 30px;
+                        @include text($fw-sm, $fs-sm, $lh-sm);
+                      }
                 }
             }
         }

@@ -19,10 +19,38 @@
 
 .realate-product{
     .container{
-        .tbody-realateProduct{
-            background-color: $bg-color-4th;
-            
-        }
+            .col-product{
+                padding: 0px 30px;
+                margin-bottom: 47px;
+                .item{ 
+                    .body-item{
+                        background-color: $bg-color-9th;
+                        img{
+                            padding-top: 40px;
+                        }
+                        .title-item{
+                            padding: 16px 0;
+                            @include text($fw-sm,$fs-md,1);
+                        }
+                        .description{
+                            padding: 0px 0px 8px;
+                            @include text($fw-sm,$fs-sm, 1);
+                            color: $text-color-5th;
+                        }
+                    }
+                    .footer-item{
+                        button{
+                            background-color: $bg-color-12th;
+                            color: $text-color-primary;
+                            @include text($fw-sm,$fs-sm,$lh-ssm);
+                        }
+                        .price{
+                            background: $bg-button-second;
+                            color: $text-color-primary;
+                        }
+                    }
+                }
+            }
     }
 }
 

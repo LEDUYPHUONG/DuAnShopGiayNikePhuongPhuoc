@@ -128,6 +128,12 @@
                             display: flex;
                             justify-content:space-around;
                             margin: 0 -$margin-item-rendertable;
+                            a#btnBuy{
+                                width: 50%;
+                                @include button;
+                                border-radius: 0;
+                                color: $bg-color-3rd ;
+                            }
                             button{
                                 width: 50%;
                                 @include button;

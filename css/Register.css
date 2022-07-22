@@ -341,7 +341,7 @@ header .container .header-inner {
   background-color: #000;
 }
 header .container .header-inner .login span {
-  color: #9a9a9a;
+  color: #F7F7F7;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-right: 30px;
   font-weight: 300;
@@ -349,7 +349,7 @@ header .container .header-inner .login span {
   line-height: 19px;
 }
 header .container .header-inner .login span .link-register {
-  color: #9a9a9a;
+  color: #F7F7F7;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   padding-right: 30px;
   font-weight: 300;
@@ -399,7 +399,6 @@ header .container .header-inner .login span .link-register {
   background-color: #ececec;
   margin: 0 auto;
   padding: 20px;
-  margin-bottom: 50px;
 }
 .footer .container .row-bottom .footer-container {
   padding: 0 150px;

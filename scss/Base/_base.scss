@@ -48,12 +48,12 @@ header{
             // }
             .login{
                 span{
-                    color: $text-color-2nd;
+                    color: $text-color-6th;
                     text-shadow: $text-shadow-primary;
                     padding-right: 30px;
                     @include text ($fw-sm,$fs-sm,$lh-sm);
                     .link-register {
-                        color: $text-color-2nd;
+                        color: $text-color-6th;
                         text-shadow: $text-shadow-primary;
                         padding-right: 30px;
                         @include text($fw-sm, $fs-sm, $lh-sm);
@@ -127,7 +127,7 @@ header{
             background-color: $bg-color-5th;
             margin: 0 auto;
             padding: 20px;
-            margin-bottom: 50px;
+            // margin-bottom: 50px;
             .footer-container{
                 padding: 0 150px;
                 .col{

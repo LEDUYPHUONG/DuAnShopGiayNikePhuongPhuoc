@@ -47,7 +47,7 @@ function renderDanhSachDoiTuong (arrDoiTuong,idBody){
                     <p><span>${doiTuong.shortDescription}</span></p>
                 </div>
                 <div class="rendertable-item-inner-bottom">
-                    <button class="btn btn-warning" onclick="muaDoiTuong('${doiTuong.id}')">Buy now</button>
+                    <a class="btn btn-warning" id="btnBuy" href="../detail.html?productid=${doiTuong.id}">Buy now</a>
                     <button class="btn btn-secondary btn-gia" type="button">${doiTuong.price}$</button>
                 </div>
             </div>

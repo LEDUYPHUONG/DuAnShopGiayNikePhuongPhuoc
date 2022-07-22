@@ -11,6 +11,11 @@ $bg-color-9th: #f8f8f8;
 $bg-color-10th: #dedddc;
 $bg-color-11th: #CBC9C9;
 $bg-color-12th: #E1B067;
+$bg-color-13th: #CCCCCC;
+
+// background gradient
+$bg-gradient-primary: linear-gradient(180deg, #6181F3 0%, #7C97F5 99.48%);
+$bg-gradient-second: linear-gradient(270deg, rgba(62, 32, 248, 0.9) 5.14%, #D017EE 89.71%);
 
 //button
 $bg-button: #F8B653;
@@ -47,6 +52,10 @@ $text-color-2nd: #9a9a9a;
 $text-color-3rd: #fff;
 $text-color-4th: red;
 $text-color-5th: #CBC9C9;
+$text-color-6th:#F7F7F7;
+$text-color-7th:#1ED90E;
+$text-color-8th:#FC0303;
+$text-color-9th:#FFFCFC;
 
 $text-shadow-primary: 0px 4px 4px rgba(0, 0, 0, 0.25);
 

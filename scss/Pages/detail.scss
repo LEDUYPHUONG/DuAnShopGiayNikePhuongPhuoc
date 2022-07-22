@@ -8,16 +8,86 @@
     
     .container{
         
-        .tbody-productName{
+        .tBody-productName{
             background-color: $bg-color-4th;
-            // p{
-                
-            // }
+            .row{
+                #col-left{
+                    display: flex;
+                    justify-content: center;
+                    img{
+                        display: inline-block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                    }
+                }
+                #col-right{
+                    h3{
+                        margin: 0px 0px 10px;
+                        @include text($fw-B,$fs-mdl,$lh-mdm);
+                    }
+                    .description{
+                        @include text($fw-md,$fs-sm,$lh-sm);
+                        color: $bg-color-3rd;
+                    }
+                    .title-size{
+                        @include text($fw-sB,$fs-mds,$lh-mdm);
+                        color: $text-color-7th;
+                        margin: 20px 0 20px;
+                    }
+                    #select-size{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        margin: 0 0 16px;
+                        .size{
+                            padding: 12px;
+                            background-color: $bg-color-13th;
+                            @include text($fw-sB,$fs-mds,$lh-mdm);
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                    #price{
+                        @include text($fw-B,$fs-mdl, $lh-mdl);
+                        color: $text-color-8th;
+                        margin-bottom: 10px;
+                    }
+                    .amount{
+                        margin-bottom: 10px;
+                        .btnAmout{
+                            i{
+                                padding: 18px;
+                                background: $bg-gradient-primary;
+                                color: $text-color-9th;
+                            }
+                            &:hover{
+                                cursor: pointer;
+                            }
+                        }
+                        span.view{
+                            @include text($fw-md,$fs-mdl,$lh-mdl);
+                            margin: 0 16px 0;
+                            color: $bg-color-3rd;
+                        }
+                    
+                    }
+                    #btnAddToCart{
+                        color: #FFF8F8;
+                        @include text($fw-sB,$fs-sm+2,$lh-mdm);
+                        background: $bg-gradient-second;
+                        padding: 15px 35px;
+                        border: none;
+                    }
+                }
+            }
         }
     }
 }
 
 .realate-product{
+    margin-top: 55px;
     .container{
             .col-product{
                 padding: 0px 30px;
@@ -39,14 +109,18 @@
                         }
                     }
                     .footer-item{
-                        button{
+                        a#btnBuy{
                             background-color: $bg-color-12th;
                             color: $text-color-primary;
-                            @include text($fw-sm,$fs-sm,$lh-ssm);
+                            @include text($fw-md,$fs-mds,50.05px);
+
                         }
+                        
                         .price{
                             background: $bg-button-second;
                             color: $text-color-primary;
+                            font-size: $fs-mds;
+                            font-weight: $fw-B;
                         }
                     }
                 }

@@ -76,6 +76,10 @@ input :focus {
   line-height: 36.31px;
 }
 
+.input-gender {
+  border: none !important;
+}
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -293,6 +297,10 @@ input :focus {
   font-weight: 400;
   font-size: 30px;
   line-height: 36.31px;
+}
+
+.input-gender {
+  border: none !important;
 }
 
 * {
@@ -495,6 +503,10 @@ input :focus {
   line-height: 36.31px;
 }
 
+.input-gender {
+  border: none !important;
+}
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -712,6 +724,10 @@ input :focus {
   font-weight: 400;
   font-size: 30px;
   line-height: 36.31px;
+}
+
+.input-gender {
+  border: none !important;
 }
 
 .carousel-out .container {

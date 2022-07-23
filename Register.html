@@ -82,7 +82,7 @@
 
       <div class="Register">
         <div class="container">
-            <div class="register-inner">
+            <!-- <div class="register-inner">
                 <div class="title-register">
                     <p class="text-center">Register</p>
                 </div>
@@ -166,6 +166,54 @@
                   </div>  
                   
                 </form>
+            </div> -->
+            <div class="wrap-register">
+              <form class="register-form" id="registerForm">
+                <h2 class="register-form-title">Register</h2>
+                <div class="register-input wrap-input-1 alert-validate me-2">
+                  <span class="label-input">Email</span>
+                  <input class="input" type="text" name="email" id="email" placeholder="email">
+                  <i class="fas fa-times btn-hide-validate"></i>
+                </div>
+                <div class="register-input wrap-input-1 alert-validate ms-2">
+                  <span class="label-input">Name</span>
+                  <input class="input" type="text" name="name" id="name" placeholder="Name">
+                  <i class="fas fa-times btn-hide-validate"></i>
+                </div>
+                <div class="register-input wrap-input-1 alert-validate me-2">
+                  <span class="label-input">Password</span>
+                  <input class="input" type="text" name="password" id="password" placeholder="password">
+                  <i class="fas fa-times btn-hide-validate"></i>
+                </div>
+                <div class="register-input wrap-input-1 alert-validate ms-2">
+                  <span class="label-input">Phone</span>
+                  <input class="input" type="text" name="phone" id="phone" placeholder="phone">
+                  <i class="fas fa-times btn-hide-validate"></i>
+                </div>
+                <div class="register-input wrap-input-1 alert-validate me-2">
+                  <span class="label-input">Password confirm</span>
+                  <input class="input" type="text" name="password-confirm" id="password-confirm" placeholder="password confirm">
+                  <i class="fas fa-times btn-hide-validate"></i>
+                </div>
+                <div class="register-input-cover ms-3">
+                  <div class="register-input-gender">
+                    <span class="gender-title">Gender</span>
+                    <div class="register-gender-radio">
+                      <input class="input-radio" type="radio" name="gender" id="male" value="0" checked="checked">
+                      <label class="lable-input-radio" for="male">male</label>
+                    </div>
+                    <div class="register-gender-radio">
+                      <input class="input-radio" type="radio" name="gender" id="female" value="1">
+                      <label class="lable-input-radio" for="female">female</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="register-form-btn">
+                  <button class="btn-submit">
+                    Submit
+                  </button>
+                </div>
+              </form>
             </div>
         </div>
       </div>  

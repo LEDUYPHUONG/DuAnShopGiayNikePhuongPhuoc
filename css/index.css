@@ -80,6 +80,20 @@ input :focus {
   border: none !important;
 }
 
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
+}
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -301,6 +315,20 @@ input :focus {
 
 .input-gender {
   border: none !important;
+}
+
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
 }
 
 * {
@@ -507,6 +535,20 @@ input :focus {
   border: none !important;
 }
 
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
+}
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -728,6 +770,20 @@ input :focus {
 
 .input-gender {
   border: none !important;
+}
+
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
 }
 
 .carousel-out .container {

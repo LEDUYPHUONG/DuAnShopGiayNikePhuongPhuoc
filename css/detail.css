@@ -80,6 +80,20 @@ input :focus {
   border: none !important;
 }
 
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
+}
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -301,6 +315,20 @@ input :focus {
 
 .input-gender {
   border: none !important;
+}
+
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
 }
 
 * {
@@ -507,6 +535,20 @@ input :focus {
   border: none !important;
 }
 
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
+}
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -730,6 +772,20 @@ input :focus {
   border: none !important;
 }
 
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
+}
+
 #btnSubmit {
   font-weight: 400;
   font-size: 30px;
@@ -809,6 +865,20 @@ input :focus {
 
 .input-gender {
   border: none !important;
+}
+
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
 }
 
 /* Responsive */
@@ -1065,13 +1135,14 @@ input :focus {
 .realate-product .container .col-product .item .footer-item a#btnBuy {
   background-color: #E1B067;
   color: #000;
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 20px;
   line-height: 50.05px;
 }
 .realate-product .container .col-product .item .footer-item .price {
   background: #DEDDDC;
   color: #000;
-  font-size: 24px;
-  font-weight: 700;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 30px;
 }

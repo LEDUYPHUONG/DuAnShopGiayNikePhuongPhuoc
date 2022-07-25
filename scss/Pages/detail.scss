@@ -112,15 +112,14 @@
                         a#btnBuy{
                             background-color: $bg-color-12th;
                             color: $text-color-primary;
-                            @include text($fw-md,$fs-mds,50.05px);
+                            @include text($fw-sm,$fs-md,50.05px);
 
                         }
                         
                         .price{
                             background: $bg-button-second;
                             color: $text-color-primary;
-                            font-size: $fs-mds;
-                            font-weight: $fw-B;
+                            @include text($fw-sm,$fs-md,30px)
                         }
                     }
                 }

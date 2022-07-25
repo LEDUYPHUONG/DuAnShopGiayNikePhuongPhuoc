@@ -80,6 +80,20 @@ input :focus {
   border: none !important;
 }
 
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
+}
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -301,6 +315,20 @@ input :focus {
 
 .input-gender {
   border: none !important;
+}
+
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
 }
 
 * {
@@ -507,6 +535,20 @@ input :focus {
   border: none !important;
 }
 
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
+}
+
 /* Responsive */
 /*           xs  <576px	đt dọc xs
     767px >  sm  ≥576px  đt ngang sm
@@ -730,6 +772,20 @@ input :focus {
   border: none !important;
 }
 
+.alert-validate {
+  margin-bottom: 42px !important;
+  border: 1px solid #fa4251 !important;
+}
+.alert-validate ::-moz-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate :-ms-input-placeholder {
+  color: #fa4251 !important;
+}
+.alert-validate span, .alert-validate ::placeholder {
+  color: #fa4251 !important;
+}
+
 .Register {
   background: #e6e6e6;
 }
@@ -760,11 +816,10 @@ input :focus {
 }
 .Register .container .wrap-register .register-form .register-input {
   width: 100%;
-  position: relative;
   border: 1px solid #e6e6e6;
   border-radius: 13px;
   padding: 10px 30px 9px 22px;
-  margin-bottom: 20px;
+  margin-bottom: 12px;
   background-color: #f7f7f7;
 }
 .Register .container .wrap-register .register-form .register-input .label-input {
@@ -778,28 +833,17 @@ input :focus {
   outline: none;
   border: none;
 }
-.Register .container .wrap-register .register-form .register-input .btn-hide-validate {
-  display: none;
-}
-.Register .container .wrap-register .register-form .register-input .alert-validate::before {
-  content: "";
-  display: flex;
-  align-items: center;
-  position: absolute;
-  width: 100%;
-  min-height: 40px;
-  background-color: #f7f7f7;
-  top: 35px;
-  left: 0px;
-  padding: 0 45px 0 22px;
-  pointer-events: none;
-  font-size: 18px;
-  color: #fa4251;
-  line-height: 1.2;
-}
 .Register .container .wrap-register .register-form .wrap-input-1 {
   width: calc((100% - 43px) / 2);
   display: inline-block;
+  position: relative;
+}
+.Register .container .wrap-register .register-form .txtError {
+  display: none;
+  position: absolute;
+  color: #fa4251;
+  left: 22px;
+  bottom: 16px;
 }
 .Register .container .wrap-register .register-form .register-input-cover {
   width: calc((100% - 43px) / 2);
@@ -816,7 +860,7 @@ input :focus {
   color: #393939;
   line-height: 1.5;
   text-transform: uppercase;
-  padding: 0 20px;
+  padding: 0 14px;
 }
 .Register .container .wrap-register .register-form .register-input-cover .register-input-gender .register-gender-radio {
   padding: 0 20px;

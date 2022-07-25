@@ -176,3 +176,11 @@ input{
     border: none !important;
 }
 
+.alert-validate{
+    margin-bottom: 42px !important;
+    border: 1px solid #fa4251 !important;
+    span ,::placeholder{
+        color: #fa4251 !important;
+    }
+}
+

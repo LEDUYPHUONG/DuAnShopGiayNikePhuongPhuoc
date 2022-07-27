@@ -38,6 +38,7 @@ a{
 
 
 header{
+    background-color: $bg-color-3rd;
     .container{
         .header-inner{
             padding: 9px 15px;
@@ -56,24 +57,18 @@ header{
         }
     }
 }
-
+.bg-light{
+    background: $bg-color-primary !important;
+}
 .menu{
     .container{
+        
         .navbar{
             padding: 0;
             .container-fluid{
                 padding: 0;
                 margin: 0 auto;
-                // .navbar-brand{
-
-                // }
-                // .navbar-toggler{
-                //     .navbar-toggler-icon{
-
-                //     }
-                // }
                 .collapse{
-                    background-color: $bg-color-4th;
                     .navbar-nav{
                         .nav-item{
                             .nav-link{
@@ -85,42 +80,158 @@ header{
                         // }
                     }
                 }
+
             }
         }
     }
 }
 
-.footer{
-    .container{
-        .row-top{
-            background-color: $bg-color-4th;
-            margin: 0 auto;
-            padding: 20px;
-            .footer-container{
-                padding: 0 150px;
-                .col{
-                    .title{
-                        p{
-                            @include text ($fw-B,$fs-sm,$lh-sm);
-                            padding-bottom: 10px;
+#rendertable{
+    display: flex;
+    flex-flow: row wrap;
+    .rendertable-item{
+        width: calc(100%/3);
+        background-color: $bg-color-primary;
+        padding-bottom: $margin-item-rendertable;
+        .rendertable-item-inner{
+            padding: $margin-item-rendertable;
+            margin: $margin-item-rendertable;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            background-color: $bg-item-rendertable;
+            .rendertable-item-inner-top{
+                background: $bg-item-rendertable;
+                img{
+                    max-width: 100%;
+                }
+            }
+            .rendertable-item-inner-mid{
+                background: $bg-item-rendertable;
+                p{
+                    @include text($fw-sm,$fs-mds,$lh-mdm);
+                    padding: 10px 10px;
+                }
+                p{
+                    span{
+                        @include text($fw-sm,$fs-mds,$lh-mdm);
+                        color:$bg-color-11th;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+            .rendertable-item-inner-bottom{
+                display: flex;
+                justify-content:space-around;
+                margin: 0 -$margin-item-rendertable;
+                .btn-buyNow{
+                    width: 50%;
+                    @include button;
+                    @include text ($fw-sB,$fs-mds,$lh-mdm);
+                    border-radius: 0;
+                    color: $bg-color-3rd ;
+                }
+                .btn-gia{
+                    background: $bg-color-10th;
+                    width: 50%;
+                    text-align: center;
+                    @include text ($fw-sB,$fs-mds,$lh-lB);
+                }
+            }
+        }
+    }
+}
+
+#tbody-productName{
+    .container_doituong{
+        margin: 0 auto;
+        padding: 58px 250px 39px 65px ;
+        background: $bg-color-primary;
+        .row{
+            display: flex;
+            flex-wrap: nowrap;
+            .img-doituong-out{
+                background-color: $bg-color-9th;
+                width: 334px;
+                height: 335px;
+                justify-content: center;
+                align-items: center;
+                margin-right: 128px;
+                .img-doituong-in{
+                    padding: 20px;
+                    img{
+                        width: 100%;
+                    }
+                }
+            }
+            .doituong-description{
+                background-color: $bg-color-primary;
+                width: 500px;
+                .doituong-name{
+                    h1{
+                        @include text ($fw-sm,$fs-mdl,$lh-mdl)
+                    }
+                    p{
+                        @include text ($fw-md,$fs-sm,$lh-sm)
+                    }
+                }
+                .doituong-size{
+                    h2{
+                        @include text ($fw-sB,$fs-mds,$lh-mdm) ;
+                        color: $text-color-6th;
+                        margin-bottom: 10px
+                    }
+                    p{
+                        @include text ($fw-md,$fs-sm,$lh-sm) ;
+                    }
+                }
+                .doituong-price{
+                    p{
+                        color: $text-color-5th ;
+                        margin-bottom: 20px;
+                        margin-top: 10px;
+                        @include text ($fw-sB,$fs-mdl,$lh-mdl) ;
+                    }
+                }
+                .doituong-amount{
+                    margin-bottom: 25px;
+                    p{
+                        
+                        .iconAmount{
+                            padding: 20px;
+                            cursor: pointer;
+                            background: $bg-linear-1 ;
                         }
-                        ul{
-                            @include text ($fw-sB,$fs-ssm,$lh-ssm);
-                            
-                            .text-red{
-                                color: $text-color-4th;
-                            }
-                            
+                        .number-amount{
+                            background: $bg-color-primary;
+                            @include text ($fw-md,$fs-mdl,$lh-mdl) ;
+                           padding: 20px;                        
                         }
+                    }
+                }
+                .btn-addtocart{
+                    background: $bg-linear-2;
+                    border: none;
+                    border-radius: 0 ;
+                    p{
+                        @include text($fw-sB,$fs-mds,$fs-mdl);
                     }
                 }
             }
         }
-        .row-bottom{
-            background-color: $bg-color-5th;
-            margin: 0 auto;
-            padding: 20px;
-            margin-bottom: 50px;
+    }
+}
+
+
+
+.footer{
+    
+    .row-top{
+        background-color: $bg-color-4th;
+        margin: 0 auto;
+        padding: 20px;
+        .container{
             .footer-container{
                 padding: 0 150px;
                 .col{
@@ -142,4 +253,32 @@ header{
             }
         }
     }
+    .row-bottom{
+        background-color: $bg-color-5th;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 50px;
+        .container{
+            .footer-container{
+                padding: 0 150px;
+                .col{
+                    .title{
+                        p{
+                            @include text ($fw-B,$fs-sm,$lh-sm);
+                            padding-bottom: 10px;
+                        }
+                        ul{
+                            @include text ($fw-sB,$fs-ssm,$lh-ssm);
+                            
+                            .text-red{
+                                color: $text-color-4th;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
 }

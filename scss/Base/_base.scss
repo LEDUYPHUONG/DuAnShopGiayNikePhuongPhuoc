@@ -98,11 +98,11 @@ header{
 }
 
 .footer{
-    .container{
-        .row-top{
-            background-color: $bg-color-4th;
-            margin: 0 auto;
-            padding: 20px;
+    .row-top{
+        background-color: $bg-color-4th;
+        margin: 0 auto;
+        padding: 20px;
+        .container{
             .footer-container{
                 padding: 0 150px;
                 .col{
@@ -123,11 +123,13 @@ header{
                 }
             }
         }
-        .row-bottom{
-            background-color: $bg-color-5th;
-            margin: 0 auto;
-            padding: 20px;
-            // margin-bottom: 50px;
+    }
+    .row-bottom{
+        background-color: $bg-color-5th;
+        margin: 0 auto;
+        padding: 20px;
+        // margin-bottom: 50px;
+        .container{
             .footer-container{
                 padding: 0 150px;
                 .col{

@@ -409,48 +409,48 @@ header .container .header-inner .login span .link-register {
   line-height: 24px;
 }
 
-.footer .container .row-top {
+.footer .row-top {
   background-color: #fafafa;
   margin: 0 auto;
   padding: 20px;
 }
-.footer .container .row-top .footer-container {
+.footer .row-top .container .footer-container {
   padding: 0 150px;
 }
-.footer .container .row-top .footer-container .col .title p {
+.footer .row-top .container .footer-container .col .title p {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   padding-bottom: 10px;
 }
-.footer .container .row-top .footer-container .col .title ul {
+.footer .row-top .container .footer-container .col .title ul {
   font-weight: 500;
   font-size: 10px;
   line-height: 15px;
 }
-.footer .container .row-top .footer-container .col .title ul .text-red {
+.footer .row-top .container .footer-container .col .title ul .text-red {
   color: red;
 }
-.footer .container .row-bottom {
+.footer .row-bottom {
   background-color: #ececec;
   margin: 0 auto;
   padding: 20px;
 }
-.footer .container .row-bottom .footer-container {
+.footer .row-bottom .container .footer-container {
   padding: 0 150px;
 }
-.footer .container .row-bottom .footer-container .col .title p {
+.footer .row-bottom .container .footer-container .col .title p {
   font-weight: 700;
   font-size: 16px;
   line-height: 19px;
   padding-bottom: 10px;
 }
-.footer .container .row-bottom .footer-container .col .title ul {
+.footer .row-bottom .container .footer-container .col .title ul {
   font-weight: 500;
   font-size: 10px;
   line-height: 15px;
 }
-.footer .container .row-bottom .footer-container .col .title ul .text-red {
+.footer .row-bottom .container .footer-container .col .title ul .text-red {
   color: red;
 }
 

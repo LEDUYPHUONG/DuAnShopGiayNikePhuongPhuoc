@@ -115,6 +115,7 @@ const validation = () => {
       errPassword.innerHTML =
         "Password phải ít nhất 8 kí tự, bao gồm chữ in hoa, chữ thường, và số";
     } else {
+      coverPassword.classList.remove("alert-validate");
       coverPassword.style.margin = "0 0 12px";
       coverPassword.style.border = "1px solid #e6e6e6";
       errPassword.style.bottom = "16px";
@@ -144,15 +145,15 @@ const validation = () => {
     let coverConfirm = document.getElementById("register-input-passConfirm");
     let errConfirm = document.getElementById("txtPass-confirm");
 
-    if (txtConfirm.value !== txtPassword.value) {
-      coverConfirm.classList.add("alert-validate");
-      errConfirm.style.display = "block";
-      errConfirm.innerHTML = "Password Confirm không khớp với password";
-    } else if (txtConfirm.validity.valueMissing) {
+    if (txtConfirm.validity.valueMissing) {
       coverConfirm.classList.add("alert-validate");
       errConfirm.style.display = "block";
       errConfirm.innerHTML = "Password Confirm không được để trống";
-    } else {
+    }else if (txtConfirm.value !== txtPassword.value && txtConfirm.validity.patternMismatch) {
+      coverConfirm.classList.add("alert-validate");
+      errConfirm.style.display = "block";
+      errConfirm.innerHTML = "Password Confirm không khớp với password";
+    }else {
       coverConfirm.classList.remove("alert-validate");
       errConfirm.style.display = "none";
       errConfirm.innerHTML = "";

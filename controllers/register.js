@@ -40,6 +40,9 @@ const signup = () => {
         alert(res.data.message);
         clearValue();
     });
+    promise.catch(() => { 
+      return alert('Tài khoản đã được đăng ký hoặc sai định dạng vui lòng kiểm tra lại');
+     })
   } catch (err) {
     console.log(err.respond?.data);
     alert('Tài khoản đã được đăng ký hoặc sai định dạng vui lòng kiểm tra lại')

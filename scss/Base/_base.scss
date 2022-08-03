@@ -48,10 +48,16 @@ header{
             // }
             .login{
                 span{
-                    color: $text-color-2nd;
+                    color: $text-color-6th;
                     text-shadow: $text-shadow-primary;
                     padding-right: 30px;
                     @include text ($fw-sm,$fs-sm,$lh-sm);
+                    .link-register {
+                        color: $text-color-6th;
+                        text-shadow: $text-shadow-primary;
+                        padding-right: 30px;
+                        @include text($fw-sm, $fs-sm, $lh-sm);
+                      }
                 }
             }
         }
@@ -86,6 +92,19 @@ header{
     }
 }
 
+.footer{
+    .row-top{
+        background-color: $bg-color-4th;
+        margin: 0 auto;
+        padding: 20px;
+        .container{
+            .footer-container{
+                padding: 0 150px;
+                .col{
+                    .title{
+                        p{
+                            @include text ($fw-B,$fs-sm,$lh-sm);
+                            padding-bottom: 10px;
 #rendertable{
     display: flex;
     flex-flow: row wrap;
@@ -173,14 +192,14 @@ header{
                         @include text ($fw-sm,$fs-mdl,$lh-mdl)
                     }
                     p{
-                        @include text ($fw-md,$fs-sm,$lh-sm)
+                        @include text ($fw-md,$fs-sm,$lh-sm);
                     }
                 }
                 .doituong-size{
                     h2{
                         @include text ($fw-sB,$fs-mds,$lh-mdm) ;
                         color: $text-color-6th;
-                        margin-bottom: 10px
+                        margin-bottom: 10px;
                     }
                     p{
                         @include text ($fw-md,$fs-sm,$lh-sm) ;
@@ -221,43 +240,10 @@ header{
             }
         }
     }
-}
-
-
-
-.footer{
-    
-    .row-top{
-        background-color: $bg-color-4th;
-        margin: 0 auto;
-        padding: 20px;
-        .container{
-            .footer-container{
-                padding: 0 150px;
-                .col{
-                    .title{
-                        p{
-                            @include text ($fw-B,$fs-sm,$lh-sm);
-                            padding-bottom: 10px;
-                        }
-                        ul{
-                            @include text ($fw-sB,$fs-ssm,$lh-ssm);
-                            
-                            .text-red{
-                                color: $text-color-4th;
-                            }
-                            
-                        }
-                    }
-                }
-            }
-        }
-    }
     .row-bottom{
         background-color: $bg-color-5th;
         margin: 0 auto;
         padding: 20px;
-        margin-bottom: 50px;
         .container{
             .footer-container{
                 padding: 0 150px;
@@ -280,5 +266,4 @@ header{
             }
         }
     }
-    
 }

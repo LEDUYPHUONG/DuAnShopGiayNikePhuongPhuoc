@@ -76,10 +76,13 @@ header{
                 margin: 0 auto;
                 .collapse{
                     .navbar-nav{
+                        
                         .nav-item{
                             .nav-link{
                                 @include text ($fw-md,$fs-md,$lh-md);
+                               
                             }
+                            
                         }
                         // form{
 
@@ -105,6 +108,48 @@ header{
                         p{
                             @include text ($fw-B,$fs-sm,$lh-sm);
                             padding-bottom: 10px;
+                        }
+                        ul{
+                            @include text ($fw-sB,$fs-ssm,$lh-ssm);
+                            
+                            .text-red{
+                                color: $text-color-4th;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .row-bottom{
+        background-color: $bg-color-5th;
+        margin: 0 auto;
+        padding: 20px;
+        .container{
+            .footer-container{
+                padding: 0 150px;
+                .col{
+                    .title{
+                        p{
+                            @include text ($fw-B,$fs-sm,$lh-sm);
+                            padding-bottom: 10px;
+                        }
+                        ul{
+                            @include text ($fw-sB,$fs-ssm,$lh-ssm);
+                            
+                            .text-red{
+                                color: $text-color-4th;
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 #rendertable{
     display: flex;
     flex-flow: row wrap;
@@ -192,7 +237,7 @@ header{
                         @include text ($fw-sm,$fs-mdl,$lh-mdl)
                     }
                     p{
-                        @include text ($fw-md,$fs-sm,$lh-sm);
+                        @include text ($fw-md,$fs-sm,$lh-sm)
                     }
                 }
                 .doituong-size{
@@ -235,32 +280,6 @@ header{
                     border-radius: 0 ;
                     p{
                         @include text($fw-sB,$fs-mds,$fs-mdl);
-                    }
-                }
-            }
-        }
-    }
-    .row-bottom{
-        background-color: $bg-color-5th;
-        margin: 0 auto;
-        padding: 20px;
-        .container{
-            .footer-container{
-                padding: 0 150px;
-                .col{
-                    .title{
-                        p{
-                            @include text ($fw-B,$fs-sm,$lh-sm);
-                            padding-bottom: 10px;
-                        }
-                        ul{
-                            @include text ($fw-sB,$fs-ssm,$lh-ssm);
-                            
-                            .text-red{
-                                color: $text-color-4th;
-                            }
-                            
-                        }
                     }
                 }
             }

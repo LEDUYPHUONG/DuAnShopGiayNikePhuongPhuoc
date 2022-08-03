@@ -34,13 +34,8 @@ function renderDanhSachDoiTuong (arrDoiTuong,idBody){
                     <p><span>${doiTuong.shortDescription}</span></p>
                 </div>
                 <div class="rendertable-item-inner-bottom">
-<<<<<<< HEAD
                     <a class="btn btn-warning" id="btnBuy" href="../detail.html?productid=${doiTuong.id}">Buy now</a>
                     <button class="btn btn-secondary btn-gia" type="button">${doiTuong.price}$</button>
-=======
-                    <a href="./detail.html?productid=${doiTuong.id}" class="btn-buyNow">Buy now</a>
-                    <span class="btn-gia">${doiTuong.price}$</span>
->>>>>>> ad318d7a2d3254befc2fedaf33631f7ed6a0e04d
                 </div>
             </div>
         </div>

@@ -80,10 +80,11 @@ header{
                         .nav-item{
                             .nav-link{
                                 @include text ($fw-md,$fs-md,$lh-md);
-                               
-                            }
-                            
+                                color: $text-color-primary;
+
+                            }              
                         }
+                        
                         // form{
 
                         // }
@@ -285,4 +286,7 @@ header{
             }
         }
     }
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: $text-color-primary;
 }

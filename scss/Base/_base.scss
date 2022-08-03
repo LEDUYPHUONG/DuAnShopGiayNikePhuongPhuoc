@@ -289,4 +289,7 @@ header{
 }
 .navbar-expand-lg .navbar-nav .nav-link {
     color: $text-color-primary;
+    &:hover{
+        color: red;
+    }
 }
